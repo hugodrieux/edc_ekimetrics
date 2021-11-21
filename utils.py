@@ -6,7 +6,7 @@ def donnees_cities(name_city, df_cities):
     """
     donnes_city = df_cities[df_cities.city == name_city]
     long, lat = float(donnes_city['lat'].iloc[0].replace(',','.')), float(donnes_city['lng'].iloc[0].replace(',','.'))
-    return long, lat
+    return name_city, long, lat
 
 
 def distance(city1,city2):

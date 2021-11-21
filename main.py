@@ -1,8 +1,9 @@
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import voyageur_de_commerce
 import utils
+from tqdm import tqdm
+import json
+
 
 df_cities = pd.read_csv("data\cities.csv", sep=";")
 df_factors = pd.read_csv("data\\factors.csv")
@@ -14,7 +15,7 @@ df_trucks = pd.read_csv("data\\trucks.csv", sep=";")
 df_warehouses = pd.read_csv("data\warehouses.csv", sep=";")
 
 
-def execute(list_of_cities):
+def execute(list_of_cities, ancienne_distance):
     """
     Execute le code de voyageur de commerce
     :param list_of_cities:
@@ -46,9 +47,6 @@ def execute(list_of_cities):
     # ordinner la nouvelle liste
     list_of_new_cities = utils.ordonner_une_liste(list_of_new_cities, list_of_cities[0][0])
 
-    # on ajoute le trajet retour à l'ancienne distance
-    trajet_retour = utils.distance(list_of_cities[0], list_of_cities[-1])
-    ancienne_distance = df_routes.loc[1]['total_distance'] + trajet_retour
 
     # list of ancienne cities
     list_of_only_old_cities = [list_of_cities[k][0] for k in range(len(list_of_cities))]
@@ -58,23 +56,33 @@ def execute(list_of_cities):
 
 if __name__ == "__main__":
 
-    database = []
+    output_trajects = []
     # for k in range(len(df_routes)):
-    for k in range(0, 5):  # Ici exemple seulement avec 5 trajets
+    for k in tqdm(range(len(df_routes))):  # Ici exemple seulement avec 5 trajets
 
         # je recupere les trajets
         stops = df_routes.loc[k]['stops'].split(' > ')
-        list_of_cities = []
-        for i in range(len(stops)):  # Pour chaque arrêt je récupere les données de lontitude et latitude de la ville
-            coord = utils.donnees_cities(stops[i], df_cities)
-            list_of_cities.append([stops[i], coord[0], coord[1]])
 
-        print("Liste de l'ancien trajet: " + str(stops))
-        test = execute(list_of_cities)
+        # on ajoute le trajet retour à l'ancienne distance
+        trajet_retour = utils.distance(utils.donnees_cities(stops[0], df_cities), utils.donnees_cities(stops[-1], df_cities))
+        ancienne_distance = df_routes.loc[k]['total_distance'] + trajet_retour
 
-        print("Liste du nouveau trajet:" + str(test[2]))
+        if len(stops) < 4:
+            output_trajects.append([stops, ancienne_distance, stops, ancienne_distance])
+        else:
+            list_of_cities = []
+            for i in range(len(stops)):  # Pour chaque arrêt je récupere les données de lontitude et latitude de la ville
+                coord = utils.donnees_cities(stops[i], df_cities)
+                list_of_cities.append(coord)
 
-        print("")
+            output_trajects.append(execute(list_of_cities, ancienne_distance))
 
-        # TODO  Problème : à chaque fois que je lance execute : il calcule le plus court trajet avec les villes que je lui donne plus les villes des anciennes fois où j'ai executé le code
-        database.append(execute(list_of_cities))
+    with open("outuput.json", 'w') as file:
+        json.dump(output_trajects, file)
+
+    sum_of_total_new_traject, sum_of_total_old_traject = 0, 0
+    for traject in output_trajects:
+        sum_of_total_new_traject += traject[3]
+        sum_of_total_old_traject += traject[1]
+    print("Nous avons économisé : " + str(int(sum_of_total_old_traject-sum_of_total_new_traject)) + " km")
+    print("Ce qui représente : " + str(int(((sum_of_total_old_traject-sum_of_total_new_traject)/sum_of_total_old_traject)*100)) + "% de CO2 économisé")
