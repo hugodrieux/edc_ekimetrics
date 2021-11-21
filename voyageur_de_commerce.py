@@ -16,7 +16,9 @@ class Ville:
 
 
 class GestionnaireCircuit:
-    villesDestinations = []
+
+    def __init__(self):
+        self.villesDestinations = [] 
 
     def ajouterVille(self, ville):
         self.villesDestinations.append(ville)
