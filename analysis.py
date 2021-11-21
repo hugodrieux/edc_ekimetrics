@@ -11,5 +11,5 @@ for traject in data:
     else:
         percentage.append(int((traject[1]-traject[3])/traject[1]*100))
 
-
+print(percentage)
 
