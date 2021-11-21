@@ -84,7 +84,7 @@ if __name__ == "__main__":
             else:
                 output_trajects.append(results_algo)
 
-    with open("outuput.json", 'w') as file:
+    with open("output.json", 'w') as file:
         json.dump(output_trajects, file, indent=6)
 
     sum_of_total_new_traject, sum_of_total_old_traject = 0, 0
