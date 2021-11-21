@@ -15,7 +15,7 @@ def distance(city1,city2):
     """
     long_city1, lat_city1 = np.pi*city1[1]/180, np.pi*city1[2]/180
     long_city2, lat_city2 = np.pi*city2[1]/180, np.pi*city2[2]/180
-    return 6371*np.arccos(np.sin(lat_city1)*np.sin(lat_city2)+np.cos(lat_city1)*np.cos(lat_city2)*np.cos(long_city1-long_city2))
+    return 6372*np.arccos(np.sin(lat_city1)*np.sin(lat_city2)+np.cos(lat_city1)*np.cos(lat_city2)*np.cos(long_city1-long_city2))
 
 
 def ordonner_une_liste(list, first_element):
