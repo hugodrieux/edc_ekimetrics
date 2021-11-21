@@ -86,12 +86,3 @@ if __name__ == "__main__":
 
     with open("output.json", 'w') as file:
         json.dump(output_trajects, file, indent=6)
-
-    sum_of_total_new_traject, sum_of_total_old_traject = 0, 0
-    for traject in output_trajects:
-        sum_of_total_new_traject += traject[3]
-        sum_of_total_old_traject += traject[1]
-
-    print("Nous avons économisé : " + str(int(sum_of_total_old_traject - sum_of_total_new_traject)) + " km")
-    print("Ce qui représente : " + str(int(((
-                                                        sum_of_total_old_traject - sum_of_total_new_traject) / sum_of_total_old_traject) * 100)) + "% de CO2 économisé")
