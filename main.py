@@ -74,11 +74,14 @@ if __name__ == "__main__":
             for i in range(len(stops)):  # Pour chaque arrêt je récupere les données de lontitude et latitude de la ville
                 coord = utils.donnees_cities(stops[i], df_cities)
                 list_of_cities.append(coord)
-
-            output_trajects.append(execute(list_of_cities, ancienne_distance))
+            results_algo = execute(list_of_cities, ancienne_distance)
+            if results_algo[1]<results_algo[3]:
+                output_trajects.append([results_algo[0], results_algo[1], results_algo[0], results_algo[1]])
+            else:
+                output_trajects.append(results_algo)
 
     with open("outuput.json", 'w') as file:
-        json.dump(output_trajects, file)
+        json.dump(output_trajects, file, indent= 6)
 
     sum_of_total_new_traject, sum_of_total_old_traject = 0, 0
     for traject in output_trajects:
