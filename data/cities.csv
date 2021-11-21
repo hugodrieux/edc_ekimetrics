@@ -1,0 +1,101 @@
+city;lat;lng;country;iso2;admin_name;capital;population;population_proper;is_warehouse
+Paris;48,8566;2,3522;France;FR;Île-de-France;primary;11020000;2148271;FALSE
+Nice;43,7034;7,2663;France;FR;Provence-Alpes-Côte d’Azur;minor;1006402;341032;FALSE
+Toulouse;43,6045;1,444;France;FR;Occitanie;admin;968638;486828;FALSE
+Marseille;43,2964;5,37;France;FR;Provence-Alpes-Côte d’Azur;admin;870018;868277;FALSE
+Rennes;48,1147;-1,6794;France;FR;Bretagne;admin;727357;217728;FALSE
+Grenoble;45,1715;5,7224;France;FR;Auvergne-Rhône-Alpes;minor;687985;157650;FALSE
+Nantes;47,2181;-1,5528;France;FR;Pays de la Loire;admin;633690;314138;FALSE
+Montpellier;43,6119;3,8772;France;FR;Occitanie;minor;607896;290053;FALSE
+Lyon;45,76;4,84;France;FR;Auvergne-Rhône-Alpes;admin;516092;516092;FALSE
+Rouen;49,4428;1,0886;France;FR;Normandie;admin;494382;111360;FALSE
+Strasbourg;48,5833;7,7458;France;FR;Grand Est;admin;465069;284677;FALSE
+Nancy;48,6936;6,1846;France;FR;Grand Est;minor;434565;104885;FALSE
+Metz;49,1203;6,1778;France;FR;Grand Est;minor;391187;116581;FALSE
+Brest;48,39;-4,49;France;FR;Bretagne;minor;300300;139602;FALSE
+Mulhouse;47,75;7,34;France;FR;Grand Est;minor;285121;108942;FALSE
+Limoges;45,8353;1,2625;France;FR;Nouvelle-Aquitaine;minor;283823;131479;FALSE
+Orléans;47,9025;1,909;France;FR;Centre-Val de Loire;admin;282828;116238;FALSE
+Bordeaux;44,84;-0,58;France;FR;Nouvelle-Aquitaine;admin;257804;257068;FALSE
+Le Havre;49,49;0,1;France;FR;Normandie;minor;235218;169733;FALSE
+Lille;50,6278;3,0583;France;FR;Hauts-de-France;admin;232787;232787;FALSE
+Reims;49,2628;4,0347;France;FR;Grand Est;minor;182460;182211;TRUE
+Saint-Étienne;45,4347;4,3903;France;FR;Auvergne-Rhône-Alpes;minor;172565;172565;FALSE
+Toulon;43,1258;5,9306;France;FR;Provence-Alpes-Côte d’Azur;minor;171953;171953;FALSE
+Dijon;47,3167;5,0167;France;FR;Bourgogne-Franche-Comté;admin;156920;156854;FALSE
+Angers;47,4736;-0,5542;France;FR;Pays de la Loire;minor;152960;152960;FALSE
+Nîmes;43,838;4,361;France;FR;Occitanie;minor;151001;149633;FALSE
+Villeurbanne;45,7667;4,8803;France;FR;Auvergne-Rhône-Alpes;;147712;147712;FALSE
+Clermont-Ferrand;45,7831;3,0824;France;FR;Auvergne-Rhône-Alpes;minor;143886;143886;TRUE
+Le Mans;48,0077;0,1984;France;FR;Pays de la Loire;minor;142946;142946;FALSE
+Aix-en-Provence;43,5263;5,4454;France;FR;Provence-Alpes-Côte d’Azur;minor;142482;142482;FALSE
+Amiens;49,892;2,299;France;FR;Hauts-de-France;minor;136105;133891;FALSE
+Tours;47,2436;0,6892;France;FR;Centre-Val de Loire;minor;135787;135787;FALSE
+Boulogne-sur-Mer;50,7264;1,6147;France;FR;Hauts-de-France;minor;133062;40664;FALSE
+Annecy;45,916;6,133;France;FR;Auvergne-Rhône-Alpes;minor;126924;126924;FALSE
+Perpignan;42,6986;2,8956;France;FR;Occitanie;minor;120158;119188;FALSE
+Boulogne-Billancourt;48,8352;2,2409;France;FR;Île-de-France;minor;120071;120071;FALSE
+Besançon;47,24;6,02;France;FR;Bourgogne-Franche-Comté;minor;115934;115934;FALSE
+Belfort;47,64;6,85;France;FR;Bourgogne-Franche-Comté;minor;114445;46954;FALSE
+Saint-Denis;48,9356;2,3539;France;FR;Île-de-France;minor;111135;111135;FALSE
+Argenteuil;48,95;2,25;France;FR;Île-de-France;minor;110210;110210;FALSE
+Montreuil;48,8611;2,4436;France;FR;Île-de-France;;109897;109897;FALSE
+Caen;49,18;-0,37;France;FR;Normandie;minor;105354;105354;FALSE
+Roubaix;50,6901;3,1817;France;FR;Hauts-de-France;;100000;98089;FALSE
+Tourcoing;50,7239;3,1612;France;FR;Hauts-de-France;;97368;97368;FALSE
+Nanterre;48,8988;2,1969;France;FR;Île-de-France;minor;95105;95105;FALSE
+Avignon;43,95;4,8075;France;FR;Provence-Alpes-Côte d’Azur;minor;93671;91729;TRUE
+Vitry-sur-Seine;48,7875;2,3928;France;FR;Île-de-France;;93557;93557;FALSE
+Épinal;48,1744;6,4512;France;FR;Grand Est;minor;93184;32223;FALSE
+Créteil;48,7911;2,4628;France;FR;Île-de-France;minor;90605;90605;FALSE
+Poitiers;46,58;0,34;France;FR;Nouvelle-Aquitaine;minor;88291;88291;FALSE
+Dunkerque;51,0383;2,3775;France;FR;Hauts-de-France;minor;87353;86865;FALSE
+Aubervilliers;48,9131;2,3831;France;FR;Île-de-France;;86375;86375;FALSE
+Versailles;48,8053;2,135;France;FR;Île-de-France;minor;85862;85205;FALSE
+Aulnay-sous-Bois;48,9386;2,4906;France;FR;Île-de-France;;85740;85740;FALSE
+Carrières-sur-Seine;48,9108;2,2889;France;FR;Île-de-France;;85191;15003;FALSE
+Colombes;48,9236;2,2522;France;FR;Île-de-France;;85177;85177;FALSE
+Courbevoic;48,8978;2,2531;France;FR;Île-de-France;;81719;81719;FALSE
+Rueil-Malmaison;48,876;2,181;France;FR;Île-de-France;;78152;77986;FALSE
+Champigny-sur-Marne;48,8172;2,5156;France;FR;Île-de-France;;77630;77039;FALSE
+Béziers;43,3476;3,219;France;FR;Occitanie;minor;77177;77177;FALSE
+Pau;43,3;-0,37;France;FR;Nouvelle-Aquitaine;minor;77130;76275;FALSE
+La Rochelle;46,1591;-1,1517;France;FR;Nouvelle-Aquitaine;minor;75735;75735;FALSE
+Saint-Maur-des-Fossés;48,7994;2,4997;France;FR;Île-de-France;;74859;74859;FALSE
+Calais;50,9481;1,8564;France;FR;Hauts-de-France;minor;73911;72929;FALSE
+Cannes;43,5513;7,0128;France;FR;Provence-Alpes-Côte d’Azur;;73868;73868;FALSE
+Antibes;43,5808;7,1239;France;FR;Provence-Alpes-Côte d’Azur;;72999;72915;FALSE
+Drancy;48,93;2,45;France;FR;Île-de-France;;71318;71318;FALSE
+Mérignac;44,8386;-0,6436;France;FR;Nouvelle-Aquitaine;;70105;70105;FALSE
+Saint-Nazaire;47,2806;-2,2086;France;FR;Pays de la Loire;minor;69993;69993;FALSE
+Colmar;48,0817;7,3556;France;FR;Grand Est;minor;69105;68703;FALSE
+Issy-les-Moulineaux;48,8239;2,27;France;FR;Île-de-France;;68451;68260;FALSE
+Noisy-le-Grand;48,8478;2,5528;France;FR;Île-de-France;;68183;68126;FALSE
+Courcouronnes;48,6239;2,4294;France;FR;Île-de-France;;67967;13490;FALSE
+Vénissieux;45,6978;4,8867;France;FR;Auvergne-Rhône-Alpes;;65894;65894;FALSE
+Cergy;49,0361;2,0631;France;FR;Île-de-France;minor;65177;65177;TRUE
+Bourges;47,0844;2,3964;France;FR;Centre-Val de Loire;minor;64551;64551;FALSE
+Levallois-Perret;48,895;2,2872;France;FR;Île-de-France;;64379;64379;FALSE
+La Seyne-sur-Mer;43,1;5,883;France;FR;Provence-Alpes-Côte d’Azur;;63936;62888;FALSE
+Pessac;44,8067;-0,6311;France;FR;Nouvelle-Aquitaine;;63808;63808;FALSE
+Valence;44,9333;4,8917;France;FR;Auvergne-Rhône-Alpes;minor;63714;63714;FALSE
+Quimper;47,9967;-4,0964;France;FR;Bretagne;minor;62985;62985;FALSE
+Antony;48,7539;2,2975;France;FR;Île-de-France;minor;62570;62570;FALSE
+Ivry-sur-Seine;48,8078;2,3747;France;FR;Île-de-France;;62052;62052;FALSE
+Montélimar;44,5581;4,7508;France;FR;Auvergne-Rhône-Alpes;;61861;39415;FALSE
+Troyes;48,2997;4,0792;France;FR;Grand Est;minor;61652;61652;FALSE
+Clichy;48,9044;2,3064;France;FR;Île-de-France;;61070;61070;FALSE
+Cherbourg;49,6333;-1,6;France;FR;Normandie;minor;60991;60991;FALSE
+Montauban;44,0181;1,3558;France;FR;Occitanie;minor;60810;60810;TRUE
+Neuilly-sur-Seine;48,8881;2,2686;France;FR;Île-de-France;;60361;59940;FALSE
+Chambéry;45,57;5,9118;France;FR;Auvergne-Rhône-Alpes;minor;58919;58833;FALSE
+Niort;46,3258;-0,4606;France;FR;Nouvelle-Aquitaine;minor;58707;58707;FALSE
+Sarcelles;48,9956;2,3808;France;FR;Île-de-France;minor;58587;58587;FALSE
+Pantin;48,8966;2,4017;France;FR;Île-de-France;;57482;57482;FALSE
+Lorient;47,75;-3,36;France;FR;Bretagne;minor;57149;57084;FALSE
+Le Blanc-Mesnil;48,9387;2,4614;France;FR;Île-de-France;;56783;56783;FALSE
+Beauvais;49,4303;2,0952;France;FR;Hauts-de-France;minor;56020;56020;FALSE
+Maisons-Alfort;48,8058;2,4378;France;FR;Île-de-France;;55655;55655;FALSE
+Hyères;43,1199;6,1316;France;FR;Provence-Alpes-Côte d’Azur;;55588;55069;FALSE
+Épinay-sur-Seine;48,9553;2,3092;France;FR;Île-de-France;;55084;54771;FALSE
+Meaux;48,9603;2,8883;France;FR;Île-de-France;minor;54991;54991;FALSE
